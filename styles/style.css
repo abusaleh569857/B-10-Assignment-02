@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+body {
+  background-color: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+}
+/* HEADER SECTION STYLING STARTED */
+
+.nav-container {
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-item ul {
+  list-style: none;
+  display: flex;
+  gap: 60px;
+  margin: 0px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 3px;
+}
+.nav-item ul a {
+  text-decoration: none;
+}
+.nav-item li {
+  display: flex;
+}
+.fitness {
+  margin: 55px 0px;
+}
+.fitness-title {
+  color: rgb(230, 83, 60);
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 800;
+}
+#home {
+  background-color: rgb(230, 83, 60);
+  border-radius: 46px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.same-style {
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 5px;
+}
+.mobile-icon {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .nav-container {
+    width: 90%;
+  }
+  .nav-item {
+    display: none;
+  }
+  .mobile-icon {
+    display: block;
+    font-size: 25px;
+  }
+}
+.banner-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  /* background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  ); */
+  background-image: linear-gradient(
+    to top bottom,
+    rgba(119, 119, 119, 1),
+    rgba(17, 17, 17, 0)
+  );
+}
+.banner-content {
+  width: 45%;
+  margin-top: 6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43%;
+}
+.banner-title {
+  font-size: 4em;
+  font-weight: 850;
+  opacity: 0.8;
+}
+.banner-title span {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+}
+.banner-description {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.5);
+}
+.btn-container {
+  width: 95%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5em;
+}
+.btn-1 {
+  width: 45%;
+  background: rgb(230, 83, 60);
+  font-size: 1.2em;
+  border-radius: 1.3em;
+  border: none;
+}
+.btn-2 {
+  width: 45%;
+  background: rgb(17, 17, 17);
+  color: #ffffff;
+  font-size: 1.2em;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 1.3em;
+}
+.card-1 {
+  width: 10.5em;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: 28.5em;
+  top: 28.8em;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
+.icon {
+  padding-top: 0.5em;
+}
+.icon i {
+  font-size: 2em;
+  color: red;
+}
+.card-1-description {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.6);
+}
+.card-2 {
+  width: 10.5em;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  right: -1em;
+  top: 9em;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(48, 48, 48, 0.54);
+}
+.card-2-description {
+  font-size: 0.85em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 576px) {
+  .banner-container {
+    flex-direction: column;
+    width: 90%;
+  }
+  .banner-content {
+    width: 95%;
+    height: 23em;
+    margin-top: 0.01em;
+  }
+  .banner-title {
+    font-size: 3em;
+    font-weight: 850;
+    opacity: 0.8;
+    margin: 0px;
+    padding: 0px;
+  }
+  .btn-container {
+    margin-top: 0.5em;
+  }
+  .image {
+    width: 100%;
+  }
+  .card-1 {
+    width: 150px;
+    left: 1em;
+    top: 39em;
+  }
+  .card-1-description {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.6);
+  }
+  .card-2 {
+    width: 150px;
+    right: 0.7em;
+    top: 26.5em;
+  }
+  .card-2-description {
+    font-size: 0.7em;
+    font-weight: 400;
+    color: rgb(255, 255, 255, 0.6);
+  }
+  .icon {
+    padding-top: 0.25em;
+  }
+  /* HEADER SECTION STYLING ENDED*/
+}
