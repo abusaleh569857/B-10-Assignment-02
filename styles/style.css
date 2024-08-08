@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 * {
   margin: 0px;
@@ -105,16 +106,17 @@ body {
 .banner-title {
   font-size: 4em;
   font-weight: 850;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .banner-title span {
-  font-family: "Dancing Script", cursive;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Miama", "Dancing Script";
   font-size: 1.5em;
 }
 .banner-description {
   font-size: 0.85em;
   font-weight: 400;
-  color: rgb(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255, 0.4);
 }
 .btn-container {
   width: 95%;
@@ -127,7 +129,8 @@ body {
 .btn-1 {
   width: 45%;
   background: rgb(230, 83, 60);
-  font-size: 1.2em;
+  color: #ffffff;
+  font-size: 1em;
   border-radius: 1.3em;
   border: none;
 }
@@ -135,7 +138,7 @@ body {
   width: 45%;
   background: rgb(17, 17, 17);
   color: #ffffff;
-  font-size: 1.2em;
+  font-size: 1em;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 1.3em;
 }
@@ -233,4 +236,504 @@ body {
     padding-top: 0.25em;
   }
   /* HEADER SECTION STYLING ENDED*/
+  /* HEADER SECTION STYLING ENDED*/
+}
+.habit-container {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  padding-bottom: 2em;
+}
+.habit-title {
+  font-size: 3em;
+  font-weight: 800;
+  opacity: 0.9;
+}
+.habit-description {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+  text-align: center;
+}
+.habit-content {
+  display: flex;
+  justify-content: space-between;
+}
+.habit-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5em;
+  width: calc(25% - 2em);
+  gap: 0.5em;
+}
+.habit-item img {
+  border-radius: 50%;
+}
+.habit-card-title {
+  margin-top: 1em;
+  font-size: 18px;
+  font-weight: 600;
+}
+.habit-card-description {
+  padding: 0.25em;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 576px) {
+  .habit-container {
+    width: 90%;
+  }
+  .habit-title {
+    font-size: 2em;
+    font-weight: 600;
+  }
+  .habit-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .habit-item {
+    width: 100%;
+  }
+  .habit-card-description {
+    width: 60%;
+  }
+}
+/* RUN / SECOND SECTION STYLING START */
+.run-container {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255, 0.07);
+  border-radius: 2em;
+}
+.run-content-1 {
+  width: 50%;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.run-content-2 {
+  width: 45%;
+}
+.run-content-2-image {
+  width: 85%;
+  background-image: url("../images/run.jpg");
+  background-position: right;
+  background-size: cover;
+  height: 17em;
+  margin: 2.5em 0em 2em 1.5em;
+  border-radius: 2em;
+}
+.run-title {
+  font-size: 3em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.run-description {
+  padding: 0.25em;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+.run-btn {
+  width: 50%;
+  padding: 1em;
+  background-color: rgb(230, 83, 60);
+  color: #ffffff;
+  border-radius: 3em;
+  border: none;
+}
+@media screen and (max-width: 576px) {
+  .run-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    border-radius: 2em;
+  }
+  .run-content-1 {
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .run-content-2 {
+    width: 100%;
+  }
+  .run-content-2 img {
+    width: 87%;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 1.5em;
+  }
+  .run-title {
+    font-size: 3em;
+  }
+  .run-btn {
+    width: 90%;
+  }
+}
+.bmi-header {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.bmi-title {
+  font-size: 2.5em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.bmi-description {
+  width: 90%;
+  padding: 0.25em;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 576px) {
+  .bmi-header {
+    width: 90%;
+  }
+}
+.bmi-container {
+  width: 100%;
+  margin-top: 3em;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.bmi-chart-container {
+  width: 48%;
+  margin: 0 auto;
+}
+.bmi-chart {
+  width: 48%;
+  margin: 0 auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.chart-container {
+  display: grid;
+  grid-template-columns: repeat(2, 10em);
+}
+.chart-item {
+  border: 1px solid rgb(255, 255, 255, 0.08);
+  padding: 1em;
+  font-size: 0.7em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+.chart-title {
+  font-size: 1.7em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.same-style {
+  font-size: 1em;
+  color: #ffffff;
+  opacity: 0.85;
+}
+.bmi-calculate-container {
+  width: 52%;
+  margin-top: 2em;
+}
+.bmi-calculate-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+.bmi-calculate-title {
+  font-size: 1.7em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.bmi-calculate-description {
+  width: 85%;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(2, 16em);
+  grid-column: span 2;
+  gap: 1em;
+}
+.info-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 0.6em;
+  padding: 1em;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+
+.bmi-calculate-btn {
+  width: 250px;
+  padding: 0.8em;
+  background-color: rgb(230, 83, 60);
+  opacity: 0.8;
+  color: #ffffff;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 2.5em;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 576px) {
+  .bmi-container {
+    flex-direction: column;
+  }
+  .bmi-chart-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .bmi-chart {
+    width: 100%;
+  }
+  .bmi-calculate-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2em;
+  }
+  .info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 10em);
+    grid-column: span 2;
+    gap: 1em;
+  }
+  .bmi-calculate-description {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+.meet-container {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 3em;
+}
+.meet-header-container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.meet-title {
+  font-size: 2.5em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+}
+.meet-description {
+  width: 80%;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+.meet-item-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  margin-top: 2em;
+}
+.meet-item {
+  width: 100%;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 18em);
+  gap: 1em;
+}
+.card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* align-items: flex-start; */
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+.image-description {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.6);
+}
+.card-01 {
+  background-image: url("../images/trainer1.png");
+  background-position: center;
+  background-size: cover;
+}
+.card-02 {
+  background-image: url("../images/trainer2.png");
+  background-position: center;
+  background-size: cover;
+}
+.card-03 {
+  background-image: url("../images/trainer3.png");
+  background-position: center;
+  background-size: cover;
+}
+.card-04 {
+  background-image: url("../images/trainer4.png");
+  background-position: center;
+  background-size: cover;
+}
+.card-05 {
+  background-image: url("../images/trainer5.png");
+  background-position: center;
+  background-size: cover;
+}
+.card-06 {
+  background-image: url("../images/trainer6.png");
+  background-position: left;
+  background-size: cover;
+}
+@media screen and (max-width: 576px) {
+  .meet-item {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 300px);
+  }
+  .meet-container {
+    width: 90%;
+  }
+  .meet-title {
+    font-size: 1.8em;
+  }
+  .meet-description {
+    width: 100%;
+  }
+}
+/* FOOTER SECTION STYLING START */
+.footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05);
+  /* border: 1px solid red; */
+  margin-top: 4em;
+}
+.footer-container {
+  display: flex;
+  width: 75%;
+  padding: 3em 0em;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+.first-item {
+  width: 52%;
+  /* border: 1px solid green; */
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.first-item-title {
+  color: rgb(230, 83, 60);
+  font-size: 4em;
+  font-weight: 800;
+  font-style: italic;
+}
+.first-item-description {
+  width: 80%;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+.second-item {
+  width: 24%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+.second-item-title {
+  font-size: 1.7em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+  margin-bottom: 0.5em;
+}
+
+.third-item {
+  width: 24%;
+  /* border: 1px solid purple; */
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+}
+.third-item-title {
+  font-size: 1.7em;
+  font-family: 800;
+  color: #ffffff;
+  opacity: 0.9;
+  margin-bottom: 0.5em;
+}
+.small-title {
+  font-size: 1.2em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+.reserved-part {
+  width: 75%;
+  border-top: 1.5px solid rgb(255, 255, 255, 0.15);
+  margin: 0 auto;
+}
+.reserved-description {
+  width: 50%;
+  /* border: 1px solid red; */
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 1em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+}
+@media screen and (max-width: 576px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 2em;
+    width: 90%;
+  }
+  .first-item {
+    width: 100%;
+  }
+  .first-item-description {
+    font-size: 0.9em;
+  }
+  .second-item {
+    width: 90%;
+  }
+  .third-item {
+    width: 90%;
+  }
+  .reserved-part {
+    width: 90%;
+  }
+  .reserved-description {
+    width: 100%;
+    text-align: start;
+    font-size: 1.3em;
+  }
 }
