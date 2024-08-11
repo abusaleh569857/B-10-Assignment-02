@@ -231,6 +231,9 @@ body {
     margin: 0px;
     padding: 0px;
   }
+  .banner-description {
+    width: 58%;
+  }
   .btn-container {
     margin-top: 0.5em;
     width: 100%;
@@ -266,8 +269,8 @@ body {
     color: rgb(255, 255, 255, 0.6);
   }
 }
-/* HEADER SECTION STYLING ENDED*/
-/* MAIN SECTION STYLING STARTED*/
+/* BANNER SECTION RESPONSIVE ENDED*/
+/* OUR COURSES SECTION STYLING STARTED*/
 .our-course-container {
   width: 100%;
   max-width: 1280px;
@@ -348,6 +351,8 @@ body {
   background: linear-gradient(to right, hsl(56, 99%, 52%), hsl(56, 99%, 32%));
   color: rgb(17, 17, 17);
 }
+/* OUR COURSES SECTION STYLING ENDED*/
+/* OUR COURSES SECTION RESPONSIVE STARTED*/
 @media screen and (max-width: 576px) {
   .course-content {
     grid-template-columns: repeat(1, 1fr);
@@ -357,6 +362,8 @@ body {
     width: 70%;
   }
 }
+/* OUR COURSES SECTION STYLING ENDED*/
+/* HABIT SECTION STYLING STARTED*/
 
 .habit-container {
   width: 75%;
@@ -409,6 +416,8 @@ body {
   font-weight: 400;
   color: rgb(255, 255, 255, 0.4);
 }
+/* HABIT SECTION STYLING ENDED*/
+/* HABIT SECTION RESPONSIVE STARTED*/
 @media screen and (max-width: 576px) {
   .habit-container {
     width: 90%;
@@ -428,9 +437,11 @@ body {
     width: 60%;
   }
 }
-/* RUN / SECOND SECTION STYLING START */
+/* HABIT SECTION RESPONSIVE STARTED*/
+/* RUN SECTION STYLING START */
 .run-container {
   width: 75%;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -476,6 +487,8 @@ body {
   border-radius: 3em;
   border: none;
 }
+/* RUN SECTION STYLING ENDED*/
+/* RUN SECTION RESPONSIVE STARTED */
 @media screen and (max-width: 576px) {
   .run-container {
     width: 90%;
@@ -503,12 +516,18 @@ body {
   .run-title {
     font-size: 3em;
   }
+  .run-description {
+    width: 67%;
+  }
   .run-btn {
-    width: 90%;
+    width: 80%;
   }
 }
+/* RUN SECTION RESPONSIVE ENDED */
+/* BMI SECTION DESIGN STSRTED */
 .bmi-header {
   width: 50%;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   gap: 1em;
@@ -535,6 +554,8 @@ body {
 }
 .bmi-container {
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
   margin-top: 3em;
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
@@ -650,6 +671,7 @@ body {
 }
 .meet-container {
   width: 75%;
+  max-width: 1280px;
   margin: 0 auto;
   margin-top: 3em;
 }
@@ -682,7 +704,7 @@ body {
   margin-top: 2em;
 }
 .meet-item {
-  width: 100%;
+  width: 96.7%;
   padding: 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -735,6 +757,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .meet-item {
+    width: 92%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 300px);
   }
