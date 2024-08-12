@@ -171,12 +171,24 @@
               We believe fitness should be accessible to everyone, everywhere,
               regardless of income or access to a gym.
             </p>
-            <div class="info-container">
-              <div class="info-item">Height/cm</div>
-              <div class="info-item">Weight/kg</div>
-              <div class="info-item">Age</div>
-              <div class="info-item">Sex</div>
-              <div class="info-item">Select an activity factor</div>
+            <form action="#" class="info-container">
+              <input type="text" class="info-item" placeholder="Height/cm" />
+              <input type="text" class="info-item" placeholder="Weight/kg" />
+              <input type="text" class="info-item" placeholder="Age" />
+              <select class="info-item" name="" id="">
+                <option value="">Sex</option>
+                <option value="">Male</option>
+                <option value="">Female</option>
+                <option value="">Other</option>
+              </select>
+            </form>
+            <div class="activity">
+              <select name="" id="activity-select">
+                <option value="">Select an activity factor</option>
+                <option value="">One</option>
+                <option value="">Two</option>
+                <option value="">Three</option>
+              </select>
             </div>
             <button class="bmi-calculate-btn">Calculate</button>
           </div>

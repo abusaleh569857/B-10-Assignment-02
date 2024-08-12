@@ -474,6 +474,7 @@ body {
   opacity: 0.9;
 }
 .run-description {
+  width: 80%;
   padding: 0.25em;
   font-size: 0.8em;
   font-weight: 400;
@@ -541,7 +542,7 @@ body {
   opacity: 0.9;
 }
 .bmi-description {
-  width: 90%;
+  width: 80%;
   padding: 0.25em;
   font-size: 0.8em;
   font-weight: 400;
@@ -619,16 +620,37 @@ body {
 .info-container {
   display: grid;
   grid-template-columns: repeat(2, 16em);
-  grid-column: span 2;
   gap: 1em;
 }
 .info-item {
   background-color: rgba(255, 255, 255, 0.05);
+  border: none;
   border-radius: 0.6em;
   padding: 1em;
   font-size: 0.8em;
   font-weight: 400;
   color: rgb(255, 255, 255, 0.4);
+  outline: none;
+}
+.info-item option {
+  background-color: rgba(119, 119, 119, 1);
+  color: rgb(255, 255, 255, 0.5);
+}
+#activity-select {
+  width: 527px;
+  border: 1px solid purple;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 0.6em;
+  padding: 1em 0.7em;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: rgb(255, 255, 255, 0.4);
+  outline: none;
+}
+.activity option {
+  background-color: rgba(119, 119, 119, 1);
+  color: rgb(255, 255, 255, 0.5);
 }
 
 .bmi-calculate-btn {
@@ -667,6 +689,9 @@ body {
   .bmi-calculate-description {
     width: 100%;
     font-size: 1em;
+  }
+  #activity-select {
+    width: 335px;
   }
 }
 .meet-container {
@@ -716,7 +741,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  /* align-items: flex-start; */
   padding-left: 1em;
   padding-bottom: 0.5em;
 }
