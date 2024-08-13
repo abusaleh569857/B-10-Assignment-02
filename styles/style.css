@@ -5,9 +5,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  /* max-width: 1280px; */
 }
 body {
   background-color: rgb(17, 17, 17);
@@ -86,7 +85,6 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  /* position: relative; */
   background-image: linear-gradient(
     to top bottom,
     rgba(119, 119, 119, 1),
@@ -218,6 +216,7 @@ body {
   .banner-container {
     flex-direction: column;
     width: 90%;
+    overflow: hidden;
   }
   .banner-content {
     width: 100%;
@@ -259,12 +258,18 @@ body {
     color: rgb(255, 255, 255, 0.6);
   }
   .card-2 {
-    width: 165px;
-    right: -1%;
+    width: 150px;
+    right: 4%;
     top: 8%;
+    padding: 10px 15px;
+  }
+  .card-2-title {
+    font-size: 30px;
+    /* font-weight: 900;
+    letter-spacing: 1px; */
   }
   .card-2-description {
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: 400;
     color: rgb(255, 255, 255, 0.6);
   }
@@ -423,7 +428,9 @@ body {
     width: 90%;
   }
   .habit-title {
-    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
     font-weight: 600;
   }
   .habit-content {
@@ -508,18 +515,12 @@ body {
   .run-content-2 {
     width: 100%;
   }
-  /* .run-content-2 img {
-    width: 87%;
-    height: auto;
-    margin-top: 0px;
-    margin-bottom: 1.5em;
-  
-  } */
+
   .run-title {
-    font-size: 3em;
+    font-size: 2.2rem;
   }
   .run-description {
-    width: 67%;
+    width: 80%;
   }
   .run-btn {
     width: 80%;
@@ -601,7 +602,7 @@ body {
   margin-top: 2em;
 }
 .bmi-calculate-content {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 1.6em;
@@ -681,10 +682,12 @@ body {
     margin: 0 auto;
     margin-top: 2em;
   }
+  .chart-container {
+    grid-template-columns: repeat(2, 50%);
+  }
   .info-container {
     display: grid;
-    grid-template-columns: repeat(2, 10em);
-    grid-column: span 2;
+    grid-template-columns: repeat(2, 45%);
     gap: 1em;
   }
   .bmi-calculate-description {
@@ -692,7 +695,7 @@ body {
     font-size: 1em;
   }
   #activity-select {
-    width: 335px;
+    width: 95%;
   }
 }
 .meet-container {
@@ -702,7 +705,7 @@ body {
   margin-top: 3em;
 }
 .meet-header-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -730,7 +733,7 @@ body {
   margin-top: 2em;
 }
 .meet-item {
-  width: 96.7%;
+  width: 100%;
   padding: 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -782,7 +785,7 @@ body {
 }
 @media screen and (max-width: 576px) {
   .meet-item {
-    width: 92%;
+    width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 300px);
   }
@@ -813,7 +816,6 @@ body {
 }
 .first-item {
   width: 52%;
-  /* border: 1px solid green; */
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -832,7 +834,6 @@ body {
 }
 .second-item {
   width: 24%;
-  /* border: 1px solid yellow; */
   display: flex;
   flex-direction: column;
   gap: 0.8em;
@@ -871,7 +872,6 @@ body {
 }
 .reserved-description {
   width: 50%;
-  /* border: 1px solid red; */
   margin: 0 auto;
   text-align: center;
   padding-top: 2em;
@@ -904,6 +904,7 @@ body {
   .reserved-description {
     width: 100%;
     text-align: start;
-    font-size: 1.3em;
+    font-size: 1.15em;
+    text-align: center;
   }
 }
